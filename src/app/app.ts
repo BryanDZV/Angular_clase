@@ -1,10 +1,10 @@
+import { UserCard } from './pages/user-card/user-card';
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { ProductosComponent } from './pages/productos/productos.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, ProductosComponent],
+  imports: [RouterOutlet],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })

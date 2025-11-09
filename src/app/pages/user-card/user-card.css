@@ -1,0 +1,9 @@
+.hijo-box {
+  border: 2px solid #2980b9;
+  padding: 15px;
+  margin: 10px;
+}
+.padre-msg {
+  font-weight: bold;
+  color: green;
+}

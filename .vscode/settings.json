@@ -1,0 +1,11 @@
+{
+  "cSpell.words": ["clase", "propiedades", "Sacando", "titulo"],
+  "cSpell.customDictionaries": {
+    "custom-dictionary-workspace": {
+      "name": "custom-dictionary-workspace",
+      "path": "${workspaceFolder:AngularClase}/.cspell/custom-dictionary-workspace.txt",
+      "addWords": true,
+      "scope": "workspace"
+    }
+  }
+}

@@ -1,0 +1,5 @@
+# Custom Dictionary Words
+plantilla
+componentes
+importar
+nombre

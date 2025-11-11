@@ -9,6 +9,7 @@ import { Component, computed, signal } from '@angular/core';
 export class Hero {
   name = signal('Iroman');
   age = signal(45);
+  apellido="lucas";
 
   heroDescription = computed(() => {
     return `${this.name()} - ${this.age()}`;
@@ -30,4 +31,5 @@ export class Hero {
   changeAge() {
     this.age.set(60);
   }
+  
 }

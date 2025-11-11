@@ -5,19 +5,21 @@ import { UserCard } from './pages/user-card/user-card';
 
 export const routes: Routes = [
   {
-    path: '**',
-    redirectTo: 'hero',
-  },
-  {
-    path: 'user',
+    path: 'user', // 1. Comprueba si es '/user'
     component: UserCard,
   },
   {
-    path: 'product',
+    path: 'product', // 2. Comprueba si es '/product'
     component: ProductCard,
   },
   {
-    path: 'hero',
+    path: 'hero', // 3. Comprueba si es '/hero'
     component: Hero,
+  },
+  {
+    // 4. Si NO coincide con ninguna de las anteriores,
+    //    coincide con '**' y redirige a 'hero'.
+    path: '**',
+    redirectTo: 'hero',
   },
 ];

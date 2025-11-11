@@ -1,10 +1,11 @@
-import { UserCard } from './pages/user-card/user-card';
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { NavBar } from './components/shared/nav-bar/nav-bar';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
+  imports: [RouterOutlet, NavBar],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })

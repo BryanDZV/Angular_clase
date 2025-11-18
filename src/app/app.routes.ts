@@ -2,6 +2,8 @@ import { Hero } from './pages/hero/hero';
 import { ProductCard } from './pages/product-card/product-card';
 import { Routes } from '@angular/router';
 import { UserCard } from './pages/user-card/user-card';
+import { Practica } from './pages/practica/practica';
+import { RickListComponent } from './pages/rick-list/rick-list';
 
 export const routes: Routes = [
   {
@@ -15,6 +17,14 @@ export const routes: Routes = [
   {
     path: 'hero', // 3. Comprueba si es '/hero'
     component: Hero,
+  },
+  {
+    path: 'practica',
+    component: Practica,
+  },
+  {
+    path: 'morty',
+    component: RickListComponent,
   },
   {
     // 4. Si NO coincide con ninguna de las anteriores,

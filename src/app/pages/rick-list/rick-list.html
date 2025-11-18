@@ -1,0 +1,26 @@
+<h2>Personajes de Rick & Morty</h2>
+
+@if (characters().length > 0) {
+<div class="list">
+  @for (c of characters(); track c.id) {
+  <div class="card" (click)="showDetails(c)">
+    <h3>{{ c.name }}</h3>
+    <img [src]="c.image" [alt]="c.name" width="120" />
+  </div>
+  }
+</div>
+} @else {
+<p>Cargando personajes...</p>
+}
+
+<hr />
+
+@if (selectedCharacter()) {
+<div class="details">
+  <h2>{{ selectedCharacter().name }}</h2>
+  <img [src]="selectedCharacter().image" width="200" />
+  <p><strong>Status:</strong> {{ selectedCharacter().status }}</p>
+  <p><strong>Species:</strong> {{ selectedCharacter().species }}</p>
+  <p><strong>Gender:</strong> {{ selectedCharacter().gender }}</p>
+</div>
+}

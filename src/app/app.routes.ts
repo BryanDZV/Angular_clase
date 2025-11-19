@@ -4,6 +4,7 @@ import { Routes } from '@angular/router';
 import { UserCard } from './pages/user-card/user-card';
 import { Practica } from './pages/practica/practica';
 import { RickListComponent } from './pages/rick-list/rick-list';
+import { Usuarios } from './pages/usuarios/usuarios';
 
 export const routes: Routes = [
   {
@@ -21,6 +22,10 @@ export const routes: Routes = [
   {
     path: 'practica',
     component: Practica,
+  },
+  {
+    path: 'usuarios',
+    component: Usuarios,
   },
   {
     path: 'morty',

@@ -1,0 +1,30 @@
+<h1>{{ titulo }}</h1>
+<div>
+  @for (user of usuarios; track $index) {
+  <p>{{ user.nombre }}</p>
+  <p>{{ user.activo }}</p>
+  <p>{{ user.edad }}</p>
+  <p>{{ user.id }}</p>
+  <p>{{ user.rol }}</p>
+  <p>***************</p>
+  }@empty{
+  <h2>ESTA VACIO</h2>
+  }
+</div>
+<div>
+  <p>tu paquete tiene estado:</p>
+  {{ paquete }}
+</div>
+<button (click)="manejadorPaquete()">Actualizar paquete</button>
+<p>introduce tu color:</p>
+<input type="radio" name="color" id="1" value="on" [(ngModel)]="estadoBoton" />ON
+<input type="radio" name="color" id="2" value="off" [(ngModel)]="estadoBoton" ="estadoBoton" />OFF
+<input
+  type="radio"
+  name="color"
+  id="3"
+  value="error"
+  [(ngModel)]="estadoBoton"
+  ="estadoBoton"
+/>ERROR
+<div [ngClass]="manejadorClass()">SOY EL ESTADO DE BOTON</div>

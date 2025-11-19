@@ -1,0 +1,9 @@
+.activado {
+  background-color: cyan;
+}
+.desactivado {
+  background-color: green;
+}
+.error {
+  background-color: brown;
+}

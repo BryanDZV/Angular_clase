@@ -35,7 +35,7 @@ export class Usuarios {
     return {
       activado: this.estadoBoton === 'on',
       desactivado: this.estadoBoton === 'off',
-      peligro: this.estadoBoton === 'error',
+      error: this.estadoBoton === 'error',
     };
   }
 }

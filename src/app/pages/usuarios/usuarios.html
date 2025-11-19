@@ -18,13 +18,6 @@
 <button (click)="manejadorPaquete()">Actualizar paquete</button>
 <p>introduce tu color:</p>
 <input type="radio" name="color" id="1" value="on" [(ngModel)]="estadoBoton" />ON
-<input type="radio" name="color" id="2" value="off" [(ngModel)]="estadoBoton" ="estadoBoton" />OFF
-<input
-  type="radio"
-  name="color"
-  id="3"
-  value="error"
-  [(ngModel)]="estadoBoton"
-  ="estadoBoton"
-/>ERROR
+<input type="radio" name="color" id="2" value="off" [(ngModel)]="estadoBoton" />OFF
+<input type="radio" name="color" id="3" value="error" [(ngModel)]="estadoBoton" />ERROR
 <div [ngClass]="manejadorClass()">SOY EL ESTADO DE BOTON</div>

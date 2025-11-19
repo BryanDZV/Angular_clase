@@ -1,6 +1,5 @@
 import { Component, Input } from '@angular/core';
 import { UserCard } from '../user-card/user-card';
-import { log } from 'console';
 
 @Component({
   selector: 'app-product-card',
